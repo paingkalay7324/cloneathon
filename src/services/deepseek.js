@@ -26,8 +26,8 @@ export async function sendMessage(messages, courseContext, apiKey) {
     throw new Error('DeepSeek API key is required. Please add your API key in Settings.')
   }
 
-  // DeepSeek uses OpenAI-compatible API
-  const openai = new OpenAI({
+  // DeepSeek uses an OpenAI-compatible API via the 'openai' npm package
+  const client = new OpenAI({
     apiKey: apiKey,
     baseURL: 'https://api.deepseek.com',
     dangerouslyAllowBrowser: true // Note: In production, use a backend proxy
@@ -52,7 +52,7 @@ Tailor your responses to be relevant to this specific course when appropriate.`
   ]
 
   try {
-    const response = await openai.chat.completions.create({
+    const response = await client.chat.completions.create({
       model: 'deepseek-chat', // DeepSeek's main chat model
       messages: formattedMessages,
       temperature: 0.7,

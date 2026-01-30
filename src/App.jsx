@@ -13,11 +13,11 @@ import SettingsModal from './components/SettingsModal'
 function App() {
   const [showAITutor, setShowAITutor] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
-  const [apiKey, setApiKey] = useState(localStorage.getItem('openai_api_key') || '')
+  const [apiKey, setApiKey] = useState(localStorage.getItem('deepseek_api_key') || '')
 
   const handleApiKeySave = (key) => {
     setApiKey(key)
-    localStorage.setItem('openai_api_key', key)
+    localStorage.setItem('deepseek_api_key', key)
     setShowSettings(false)
   }
 

@@ -142,7 +142,7 @@ cloneathon/
 │   │   ├── Dashboard.jsx     # Main dashboard
 │   │   └── Grades.jsx        # Grades overview
 │   ├── services/
-│   │   └── openai.js         # DeepSeek API integration
+│   │   └── deepseek.js       # DeepSeek API integration
 │   ├── styles/
 │   │   └── index.css         # Global styles
 │   ├── App.jsx
@@ -173,10 +173,10 @@ Inspired by cozy libraries and scholarly aesthetics, featuring warm neutrals, el
 
 ### Changing AI Model
 
-Edit `src/services/openai.js`:
+Edit `src/services/deepseek.js`:
 
 ```javascript
-const response = await openai.chat.completions.create({
+const response = await client.chat.completions.create({
   model: 'deepseek-chat',  // Options: 'deepseek-chat', 'deepseek-coder'
   // ...
 })

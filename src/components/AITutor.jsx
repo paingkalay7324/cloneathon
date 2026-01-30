@@ -13,7 +13,7 @@ import {
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { sendMessage } from '../services/openai'
+import { sendMessage } from '../services/deepseek'
 import { courses } from '../data/mockData'
 
 const quickPrompts = [
