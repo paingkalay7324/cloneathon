@@ -1,6 +1,6 @@
 # LearnFlow 📚
 
-A beautiful Canvas LMS clone with an integrated AI Study Buddy powered by ChatGPT. Built with React, Vite, and Framer Motion.
+A beautiful Canvas LMS clone with an integrated AI Study Buddy powered by DeepSeek. Built with React, Vite, and Framer Motion.
 
 ![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-5.1-646CFF?logo=vite)
@@ -16,7 +16,7 @@ A beautiful Canvas LMS clone with an integrated AI Study Buddy powered by ChatGP
 - **Calendar** - Week and month views with events and due dates
 
 ### 🤖 AI Study Buddy
-- **ChatGPT Integration** - Powered by GPT-4o-mini for intelligent tutoring
+- **DeepSeek Integration** - Powered by DeepSeek Chat for intelligent tutoring
 - **Course Context** - AI understands which course you're studying
 - **Quick Prompts** - One-click actions for common study tasks
 - **Code Help** - Syntax-highlighted code blocks for programming help
@@ -39,7 +39,7 @@ A beautiful Canvas LMS clone with an integrated AI Study Buddy powered by ChatGP
 
 1. **Navigate to the project:**
    ```bash
-   cd cloneathon_2
+   cd cloneathon/cloneathon
    ```
 
 2. **Install dependencies:**
@@ -58,7 +58,7 @@ A beautiful Canvas LMS clone with an integrated AI Study Buddy powered by ChatGP
 5. **Configure AI Study Buddy:**
    - Click the "AI Tutor" button in the header
    - Click the ⚙️ Settings icon
-   - Enter your OpenAI API key
+   - Enter your DeepSeek API key
    - Start learning with AI assistance!
 
 ## 📱 Pages & Features
@@ -124,7 +124,7 @@ Select a course from the dropdown to give the AI context about what you're study
 ## 🏗️ Project Structure
 
 ```
-cloneathon_2/
+cloneathon/
 ├── public/
 │   └── favicon.svg
 ├── src/
@@ -142,7 +142,7 @@ cloneathon_2/
 │   │   ├── Dashboard.jsx     # Main dashboard
 │   │   └── Grades.jsx        # Grades overview
 │   ├── services/
-│   │   └── openai.js         # ChatGPT API integration
+│   │   └── openai.js         # DeepSeek API integration
 │   ├── styles/
 │   │   └── index.css         # Global styles
 │   ├── App.jsx
@@ -198,8 +198,16 @@ Edit `src/data/mockData.js` to add:
 ## 🛡️ Security Notes
 
 - API keys are stored in browser localStorage
-- Direct API calls to OpenAI (client-side)
+- Direct API calls to DeepSeek (client-side)
 - For production, use a backend proxy to protect your API key
+
+## 💰 DeepSeek Pricing
+
+DeepSeek offers very affordable API pricing:
+- ~$0.14 per 1 million input tokens
+- ~$0.28 per 1 million output tokens
+
+A few dollars will last thousands of conversations!
 
 ## 📄 License
 
@@ -211,6 +219,7 @@ MIT License - Use freely for learning and building!
 - Icons by React Icons (Feather Icons)
 - Animations by Framer Motion
 - Date handling by date-fns
+- AI powered by DeepSeek
 
 ---
 
